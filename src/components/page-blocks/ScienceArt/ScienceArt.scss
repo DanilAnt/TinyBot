@@ -1,0 +1,55 @@
+.ScienceArt{
+
+.textTop{
+    flex: 0 0 35%;
+    padding-top: 80px;
+    padding-right: 40px;
+
+    @media (max-width: 768px) {
+        flex: 0 0 50%;
+          padding-top: 30px;
+    padding-right: 10px;
+    }
+
+
+}
+
+
+.titleBlock{
+    padding-right: 100px;
+    padding-bottom: 20px;
+    @media (max-width: 768px) {
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    .titleInnerBlock{
+        font-size: 38px;
+        line-height: 48px; 
+        padding-right: 20px;
+        padding-top: 50px;
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 32px; 
+            padding-right: 10px;
+            padding-top: 30px;
+        }
+
+        .verticalLine{
+            height: 550px;
+            @media (max-width: 768px) {
+                height: 600px;
+            }
+        }
+    }
+
+}
+
+.textBottom{
+    flex: 0 0 35%; padding-top: 80px; padding-right: 40px;
+    @media (max-width: 768px) {
+        flex: 0 0 95%; padding-top: 40px; padding-right: 20px;
+    }
+}
+}

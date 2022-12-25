@@ -1,0 +1,74 @@
+.ProjectIdea {
+
+    .description {
+        margin-bottom: 100px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 50px
+        }
+    }
+
+    .items{
+        flex-direction: row;
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+
+
+
+        .item{
+            flex-direction: column;
+            padding: 0 8px;
+            @media (max-width: 576px) {
+                flex-direction: row;
+                align-items: center;
+                padding: 8px 0px;
+            }
+
+            .stickR{
+                position: absolute;
+                z-index: 1;
+                width: 50%;
+                right: 0;
+                top: 25px;
+                height: 2px;
+                background-color: #c2d1d9;
+                @media (max-width: 576px) {
+
+                    width:  2px;
+                    left: 25px;
+                    bottom: 0px;
+                    top: unset;
+                    height:50%;
+                }
+            }
+.stickL{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    left: 0;
+    top: 25px;
+    height: 2px;
+    background-color: #c2d1d9;
+    @media (max-width: 576px) {
+
+        width:  2px;
+        left: 25px;
+        top: 0px;
+        height:50%;
+    }
+}
+            .description{
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 576px) {
+                    padding-left: 8px;
+                 align-items: flex-start;
+                 & *{
+                    text-align: left !important;
+                 }
+                }
+            }
+        }
+    }
+}

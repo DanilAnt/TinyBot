@@ -1,0 +1,115 @@
+.initial {
+
+    .initial_content {
+        display: flex;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+
+
+    }
+
+    .initial_title {
+
+        font-size: 180px;
+        line-height: 234px;
+
+
+
+        @media (max-width: 1200px) {
+            font-size: 150px;
+            line-height: 180px;
+        }
+
+        @media (max-width: 992px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 110px;
+            line-height: 120px;
+        }
+
+
+    }
+
+    .initial_cards {
+        max-width: 800px;
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        .card {
+            padding: 12px;
+            margin-bottom: 45px;
+            background-color: rgba(194, 209, 217, 0.15);
+
+            @media (max-width: 768px) {
+                background-color: rgba(194, 209, 217, 0.5);
+            }
+
+            .card_title {
+                margin-top: 95px;
+                margin-bottom: 17px;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 31px;
+                color: #505d68;
+
+
+                @media (max-width: 768px) {
+                    margin-top: 25px;
+                    margin-bottom: 17px;
+
+                }
+            }
+        }
+
+        .card_number {
+            font-size: 206px;
+            line-height: 237px;
+            padding: 0 30px;
+            color: #c2d1d9;
+            opacity: 0.3;
+
+            @media (max-width: 768px) {
+                margin-top: 25px;
+                font-size: 100px;
+                line-height: 60px;
+                padding: 0 10px;
+                opacity: 1;
+                color: #505d68;
+            }
+        }
+
+
+        .card_text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #a1aeb7;
+            @media (max-width: 768px) {
+                color: #505d68;
+            }
+        }
+    }
+
+    .img {
+        position: absolute;
+        right: 0;
+        top: -15px;
+        z-index: 1;
+
+        @media (max-width: 768px) {
+            z-index: -1;
+            margin-top: 25px;
+            font-size: 100px;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+    }
+}

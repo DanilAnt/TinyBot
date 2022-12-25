@@ -1,0 +1,13 @@
+.AboutRobots {
+    .RobotCard {
+        flex: 1 1 33%;
+        padding: 0 25px;
+        max-width: 33%;
+
+        @media (max-width: 576px) {
+            flex: 1 1 50%;
+            padding: 0 15px;
+            max-width: 50%;
+        }
+    }
+}

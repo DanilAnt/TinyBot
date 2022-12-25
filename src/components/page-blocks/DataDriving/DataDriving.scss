@@ -1,0 +1,66 @@
+.DataDriving {
+
+    .card {
+        padding: 30px 40px 30px 40px;
+
+        @media (max-width: 576px) {
+            padding: 40px 5px 30px 5px
+        }
+
+        .stage {
+
+            .imgContainer {
+                width: 90px;
+                height: 90px;
+
+                @media (max-width: 576px) {
+                    width: 40px;
+                    height: 40px;
+                    padding-top: 15px;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        object-fit: contain;
+                    }
+                }
+
+                .badge {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: #424B5A;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    color: #fff;
+                    padding-right: 2px;
+
+                    @media (max-width: 576px) {
+                        padding-right: 0;
+                        width: 25px;
+                        height: 25px;
+                        left: 50%;
+                        top: -28px;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            .title{
+                font-style: normal;
+              font-weight: 700;
+              font-size: 21px;
+              line-height: 31px;
+              /* identical to box height, or 148% */
+              text-align: center;
+
+              color: #505d68;
+
+              @media (max-width: 576px) {
+
+                font-size: 16px;
+              }
+            }
+        }
+    }
+}

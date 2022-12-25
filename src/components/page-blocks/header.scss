@@ -1,0 +1,30 @@
+.header {
+
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    letter-spacing: 0.02em;
+    background-color: #f9f6f6;
+    color: #505D68;
+
+    .nav {
+        height: 50px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
+    }
+
+    .nav_item {
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+}
