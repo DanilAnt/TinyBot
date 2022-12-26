@@ -4,10 +4,32 @@
         padding: 0 25px;
         max-width: 33%;
 
+
+        .imgContainer {
+
+            overflow: hidden;
+
+            img {
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all linear 0.3s;
+
+                &:hover {
+                    transform: translate(-50%, -48%) scale(1.1);
+                }
+            }
+        }
+
+
+
+
         @media (max-width: 576px) {
             flex: 1 1 50%;
             padding: 0 15px;
             max-width: 50%;
         }
+
+
     }
 }
